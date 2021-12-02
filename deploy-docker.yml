@@ -4,7 +4,7 @@
   tasks:
     - name: Install python pip
       yum:
-        name: python-pip3
+        name: python-pip
         state: present
     - name: Install docker
       yum:
