@@ -8,11 +8,11 @@
         state: present
     - name: Install docker
       yum:
-        name: "docker<5"
+        name: "docker"
         state: present
     - name: start docker
       service:
-        name: "docker<5"
+        name: "docker"
         state: started
         enabled: yes
     - name: Install dockercompose
