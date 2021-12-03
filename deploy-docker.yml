@@ -15,6 +15,10 @@
         name: docker
         state: started
         enabled: yes
+    - name: Install dockercompose
+      yum:
+        name: docker-compose
+        state: present
     - name: Install docker-py python module
       pip:
         name: docker-py
